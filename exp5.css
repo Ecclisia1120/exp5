@@ -1,0 +1,91 @@
+/* General page style */
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Calculator card */
+.calculator {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 400px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Input styling */
+.input-group {
+    display: flex;
+    gap: 10px;
+}
+
+input {
+    width: 50%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus {
+    border-color: #2575fc;
+}
+
+/* Button styling */
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+button {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Button colors */
+.add { background-color: #28a745; }
+.add:hover { background-color: #218838; }
+
+.subtract { background-color: #ffc107; color: black; }
+.subtract:hover { background-color: #e0a800; }
+
+.divide { background-color: #17a2b8; }
+.divide:hover { background-color: #138496; }
+
+.multiply { background-color: #79669d; }
+.multiply:hover { background-color: #8772b3; }
+
+.clear { background-color: #dc3545; }
+.clear:hover { background-color: #c82333; }
+
+/* Result box */
+#resultBox {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    text-align: left;
+    font-size: 16px;
+}
