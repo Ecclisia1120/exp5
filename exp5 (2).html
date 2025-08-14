@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="exp5 (2).css">
+</head>
+<body>
+    <div class="calculator">
+        <h2>BMI Calculator</h2>
+
+        <div class="input-group-vertical">
+            <input type="number" id="weight" placeholder="Weight in kg">
+            <input type="number" id="height" step="0.01" placeholder="Height in meters">
+        </div>
+
+        <div class="buttons">
+            <button class="calculate" onclick="calculateBMI()">Calculate BMI</button>
+            <button class="clear" onclick="clearBMI()">Clear</button>
+        </div>
+
+        <div id="resultBox">
+            <label>Your BMI:</label>
+            <span id="bmiValue"></span><br>
+            <label>Status:</label>
+            <span id="bmiStatus"></span>
+        </div>
+    </div>
+
+    <script src="exp5 (2).js"></script>
+</body>
+</html>
