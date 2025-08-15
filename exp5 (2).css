@@ -14,19 +14,27 @@ body {
     border-radius: 15px;
     box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
     text-align: center;
-    width: 350px;
+    width: 380px;
 }
 
 h2 {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     color: #333;
 }
 
-/* Vertical input style */
+.formula {
+    font-size: 14px;
+    color: #444;
+    background: #f0f0f0;
+    padding: 8px;
+    border-radius: 6px;
+}
+
 .input-group-vertical {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    margin-top: 15px;
 }
 
 input {
@@ -42,7 +50,6 @@ input:focus {
     border-color: #11998e;
 }
 
-/* Buttons */
 .buttons {
     margin-top: 20px;
     display: flex;
@@ -60,14 +67,12 @@ button {
     transition: 0.3s;
 }
 
-/* Specific button styles */
 .calculate { background-color: #28a745; }
 .calculate:hover { background-color: #218838; }
 
 .clear { background-color: #dc3545; }
 .clear:hover { background-color: #c82333; }
 
-/* Result box */
 #resultBox {
     margin-top: 20px;
     padding: 12px;
@@ -80,4 +85,23 @@ button {
 
 #bmiStatus {
     font-weight: bold;
+}
+
+/* BMI Table */
+.bmi-table {
+    margin-top: 20px;
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.bmi-table th {
+    background: #11998e;
+    color: white;
+    padding: 6px;
+}
+
+.bmi-table td {
+    padding: 6px;
+    border: 1px solid #ccc;
 }
