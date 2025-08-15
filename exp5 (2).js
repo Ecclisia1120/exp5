@@ -8,6 +8,7 @@ function calculateBMI() {
         return;
     }
 
+    // Apply BMI formula
     let bmi = weight / (height * height);
     document.getElementById('bmiValue').innerText = bmi.toFixed(2);
 
