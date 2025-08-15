@@ -9,22 +9,31 @@
     <div class="calculator">
         <h2>BMI Calculator</h2>
 
+        <!-- Formula Display -->
+        <p class="formula">
+            <b>Formula:</b> BMI = weight(kg) / ( height(meter) )²
+        </p>
+
+        <!-- Input Fields -->
         <div class="input-group-vertical">
             <input type="number" id="weight" placeholder="Weight in kg">
             <input type="number" id="height" step="0.01" placeholder="Height in meters">
         </div>
 
+        <!-- Buttons -->
         <div class="buttons">
             <button class="calculate" onclick="calculateBMI()">Calculate BMI</button>
             <button class="clear" onclick="clearBMI()">Clear</button>
         </div>
 
+        <!-- Result -->
         <div id="resultBox">
             <label>Your BMI:</label>
             <span id="bmiValue"></span><br>
             <label>Status:</label>
             <span id="bmiStatus"></span>
         </div>
+
     </div>
 
     <script src="exp5 (2).js"></script>
